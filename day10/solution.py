@@ -185,7 +185,11 @@ for y in range(y_max):
     for x in range(x_max):   
         print(data[y][x], end='')
     print()
-    
+    #Print map
+    for y in range(y_max):
+        for x in range(x_max):   
+            print(data[y][x], end='')
+        print()
 print('Inner tiles:', inner_cnt)
 print('Outer tiles:', outer_cnt)
             
