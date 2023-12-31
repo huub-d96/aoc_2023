@@ -31,12 +31,10 @@ def f(min, max, end=[*G][-1], x=0):
         val, x_val, pos, dir = heappop(todo)
 
         if (pos==end): 
-            print(val, x_val, pos, dir)
             return val
             
         if (pos, dir) in seen: 
             continue
-
 
         seen.add((pos,dir))
 
